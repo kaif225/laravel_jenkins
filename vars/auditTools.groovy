@@ -1,6 +1,7 @@
 def call() {
     pipeline {
-        agent any 
+        agent any
+        stages {
         stage('Build Docker image') {
             steps {
                 script {
@@ -20,6 +21,7 @@ def call() {
                     }
                 }
             }
+        }
         }
     }
 }
