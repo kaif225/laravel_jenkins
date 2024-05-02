@@ -1,5 +1,6 @@
 def call() {
-    node {
+    pipeline {
+        agent any 
         stage('Build Docker image') {
             steps {
                 script {
