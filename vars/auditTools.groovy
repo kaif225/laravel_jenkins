@@ -2,7 +2,7 @@ def call() {
     node { 
         sh """ 
            git --version
-           java -version
+           docker.build('laravel-app', '.')
            """
     }
 }
