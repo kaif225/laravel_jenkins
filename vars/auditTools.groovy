@@ -1,4 +1,4 @@
-def buildAndTestLaravelApp() {
+def call() {
     stage('Build Docker image') {
         steps {
             script {
