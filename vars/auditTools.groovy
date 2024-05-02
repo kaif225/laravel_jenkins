@@ -1,5 +1,5 @@
 def call() {
-    node {
+    node { 
         sh """ 
            git --version
            java -version
